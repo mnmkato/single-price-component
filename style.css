@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+body{
+    background-color: hsl(204, 43%, 93%);
+    font-size: 16px;
+    font-family: Karla;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    border-radius: 0.5rem;
+    box-shadow: 0px 2px 5px 2px hsl(218, 22%, 67%);
+}
+.price{
+    display: flex;
+    align-items: center;
+}
+.price>h1{
+    margin: 0;
+    margin-right: 1rem;
+}
+.price>span{
+    color: hsl(179, 62%, 68%);
+}
+.section{
+    padding: 1rem 2rem;
+}
+.top-div{
+    background-color: #fff;
+    
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+}
+.top-div>p{
+    color: hsl(218, 22%, 67%);
+}
+.subscription-div{
+    background-color:  hsl(179, 62%, 43%);
+    color: hsl(204, 43%, 93%);
+}
+button{
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    padding: 1rem;
+    font-weight: 700;
+    color: hsl(68, 100%, 88%);
+    box-shadow: 0px 2px 2px 2px hsl(152, 52%, 39%);
+    margin-bottom: 1rem;
+}
+.bottom-div{
+    background-color:  hsl(179, 47%, 52%);
+    color: hsl(204, 43%, 93%);
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.yellow-text{
+    color: hsl(71, 73%, 54%);
+}
+.green-text{
+    color: hsl(179, 62%, 43%);
+}
+@media only screen and (min-width:475px){
+    body{  
+        min-height: 100vh;
+        align-items: center;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 40rem;
+    }
+    .top-div{
+        grid-area: 1/1/2/3;
+    }
+    .subscription-div{
+        border-bottom-left-radius: 0.5rem;
+    }
+    .bottom-div{
+        border-bottom-left-radius: 0rem;
+    }
+}
